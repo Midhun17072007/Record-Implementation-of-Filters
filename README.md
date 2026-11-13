@@ -35,7 +35,7 @@ To write a Python program using OpenCV to apply different smoothing filters (Ave
 Import the required libraries: OpenCV, NumPy, and Matplotlib.
 
 ### Step 2:
-Read the input image (e.g., `image.jpg`).
+Read the input image (e.g., `Qno. 1.jpg`).
 
 ### Step 3:
 Convert the image from BGR to RGB format for display.
@@ -75,7 +75,7 @@ Display all filtered images using a grid layout for comparison.
 import cv2
 import matplotlib.pyplot as plt
 import numpy as np
-image1=cv2.imread("spider.png")
+image1=cv2.imread("Qno. 1.png")
 image2=cv2.cvtColor(image1,cv2.COLOR_BGR2RGB)
 kernel=np.ones((11,11),np.float32)/169
 image3=cv2.filter2D(image2,-1,kernel)
@@ -90,7 +90,8 @@ plt.title("Average Filter Image")
 plt.axis("off")
 plt.show()
 ```
-<img width="892" height="267" alt="image" src="https://github.com/user-attachments/assets/fad77d25-e01b-481d-8583-568f6d0e0a28" />
+<img width="821" height="257" alt="image" src="https://github.com/user-attachments/assets/4a2a5b54-964f-4bf4-9a74-f7d19f7d5a65" />
+
 
 ## ii) Using Weighted Averaging Filter
 ```
@@ -101,7 +102,8 @@ plt.title("Weighted Average Filter Image")
 plt.axis("off")
 plt.show()
 ```
-<img width="682" height="398" alt="image" src="https://github.com/user-attachments/assets/f02cb45f-43b4-466c-a1e8-c69c38025635" />
+<img width="600" height="195" alt="image" src="https://github.com/user-attachments/assets/9ed0970b-cb1d-47f0-8ac7-54b1c08fb3f8" />
+
 
 ## iii) Using Gaussian Filter
 ```
@@ -111,7 +113,8 @@ plt.title("Gaussian Blur")
 plt.axis("off")
 plt.show()
 ```
-<img width="660" height="391" alt="image" src="https://github.com/user-attachments/assets/be266a8f-ef81-487f-acb3-6cca9c05b2fc" />
+<img width="606" height="195" alt="image" src="https://github.com/user-attachments/assets/f3863bfc-cdbf-44be-8efe-be8bfeb63281" />
+
 
 ## iv)Using Median Filter
 ```
@@ -120,7 +123,8 @@ plt.title("Median Blur")
 plt.axis("off")
 plt.show()
 ```
-<img width="572" height="325" alt="image" src="https://github.com/user-attachments/assets/a69f4455-1928-498a-9220-f7f16235184f" />
+<img width="810" height="247" alt="image" src="https://github.com/user-attachments/assets/aa74e5af-3fc3-4a3a-80a6-53f4f09d15ae" />
+
 
 ## 2. Sharpening Filters
 ## i) Using Laplacian Linear Kernal
@@ -132,7 +136,8 @@ plt.title("Laplacian Kernel")
 plt.axis("off")
 plt.show()
 ```
-<img width="662" height="400" alt="image" src="https://github.com/user-attachments/assets/b5bf72e3-7cae-4332-bde6-7fe132bd0fd2" />
+<img width="565" height="195" alt="image" src="https://github.com/user-attachments/assets/472eecc0-4515-44ad-bbe7-79ea0ea2a8ca" />
+
 
 ## ii) Using Laplacian Operator
 ```
@@ -143,7 +148,7 @@ plt.axis("off")
 plt.show()
 ```
 
-<img width="1362" height="427" alt="image" src="https://github.com/user-attachments/assets/3abc052f-8f41-4778-a5e8-d106d62589b3" />
+<img width="1237" height="243" alt="image" src="https://github.com/user-attachments/assets/cc0a57bc-c7a6-40a1-9b70-46fc5a39a013" />
 
 
 
